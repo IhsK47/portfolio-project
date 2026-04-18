@@ -1,3 +1,9 @@
-scroll isnt working
+nav, spacing it out
 
-&--landing //worst to worst use ID
+//about me pic
+display block
+
+float: right
+float: none
+
+any other comments
