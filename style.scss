@@ -36,10 +36,7 @@ $desktop: 1080px;
 .projectsGrid {
   @include desktop {
     display: grid;
-    grid-template-columns: repeat(
-      2,
-      1fr
-    ); //might need to turn into repeat function
+    grid-template-columns: repeat(2,1fr);
   }
 
   .projectCard {
@@ -50,6 +47,8 @@ $desktop: 1080px;
   &__picture {
     border-radius: 7%;
     width: 80%;
+
+
   }
 
   &__button {
@@ -83,12 +82,10 @@ main div {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1px solid red;
+  //border: 1px solid red;
 }
 
-.p,
-p,
-div {
+.p, p, div {
   font-size: 0.8rem;
 
   &--bold {
@@ -110,6 +107,11 @@ nav {
   }
 }
 
+nav a {
+    margin-inline: 5px;
+}
+
+
 main {
   margin: 12px;
 }
@@ -122,8 +124,27 @@ h2 {
   text-align: center;
 }
 
+.aboutMe {
+  
+  @include desktop {
+    flex-direction: row;
+  }
+
+}
+
 #ihsan-pic {
-  width: 30vw;
+  width: 200px;
+  margin-top: 1rem;
+  border-radius: 10%;
+
+  @include desktop {
+    margin-inline: 5vw;
+  }
+
+}
+
+.aboutMe p {
+   margin: 5% 3% 5% 3%; 
 }
 
 .icon {
@@ -132,7 +153,7 @@ h2 {
 
   &__footer {
     border-radius: 50%;
-    overflow: hidden; //can make it png and round via bg coloring
+    overflow: hidden; //can keep it png and round via bg coloring
     width: 40px;
     margin: 0.5rem;
   }

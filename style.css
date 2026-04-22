@@ -59,17 +59,12 @@ main div {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1px solid red;
 }
 
-.p,
-p,
-div {
+.p, p, div {
   font-size: 0.8rem;
 }
-.p--bold,
-p--bold,
-div--bold {
+.p--bold, p--bold, div--bold {
   font-weight: 600;
 }
 
@@ -88,6 +83,10 @@ nav {
   }
 }
 
+nav a {
+  margin-inline: 5px;
+}
+
 main {
   margin: 12px;
 }
@@ -100,8 +99,25 @@ h2 {
   text-align: center;
 }
 
+@media (min-width: 1080px) {
+  .aboutMe {
+    flex-direction: row;
+  }
+}
+
 #ihsan-pic {
-  width: 30vw;
+  width: 200px;
+  margin-top: 1rem;
+  border-radius: 10%;
+}
+@media (min-width: 1080px) {
+  #ihsan-pic {
+    margin-inline: 5vw;
+  }
+}
+
+.aboutMe p {
+  margin: 5% 3% 5% 3%;
 }
 
 .icon {
