@@ -1,22 +1,5 @@
 https://www.figma.com/design/GcXrhyHfbBVzSsRHPcTmRh/Curriculum---Web---Student-Portfolio-Template?node-id=3552-2&p=f&t=fI3ohnBpsjvVlSKC-0
 
-//about me pic
-display block
-- float: right
-- float: none
 
-@media screen and (max-width: 767px) {
-  .hide_on_mobile {
-    display: none;
-  }
-}
-@media screen and (min-width: 768px) {
-  .hide_on_mobile {
-    display: block;
-  }
-}
-
-flex-direction: hollow
-- changes from land to port
 
 any other comments

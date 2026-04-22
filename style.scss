@@ -29,7 +29,7 @@ $desktop: 1080px;
 
   @include desktop {
     grid-template-columns: repeat(9, 1fr);
-    width: min-content(648px); //## uhh not really working
+    width: 1000px; //## uhh not really working  //check now
   }
 }
 
@@ -41,14 +41,12 @@ $desktop: 1080px;
 
   .projectCard {
     margin: 1rem;
-    border: 1px dotted blue;
+    //border: 1px dotted blue; //test border
   }
 
   &__picture {
     border-radius: 7%;
     width: 80%;
-
-
   }
 
   &__button {
@@ -82,7 +80,7 @@ main div {
   display: flex;
   flex-direction: column;
   align-items: center;
-  //border: 1px solid red;
+  //border: 1px solid red; //test borders
 }
 
 .p, p, div {
@@ -122,10 +120,11 @@ h1 {
 
 h2 {
   text-align: center;
+  margin: 1rem 0rem 1rem 0rem ;
+  //background-color: aqua; //test borders
 }
 
 .aboutMe {
-  
   @include desktop {
     flex-direction: row;
   }
@@ -134,7 +133,7 @@ h2 {
 
 #ihsan-pic {
   width: 200px;
-  margin-top: 1rem;
+  // margin-top: 1rem;
   border-radius: 10%;
 
   @include desktop {
@@ -144,7 +143,7 @@ h2 {
 }
 
 .aboutMe p {
-   margin: 5% 3% 5% 3%; 
+   margin: 4% 3% 4% 3%; 
 }
 
 .icon {
@@ -167,7 +166,7 @@ h2 {
 }
 
 main p {
-  margin: 3% 10% 3% 10%; //left up right down
+  margin: 3%  7% 3% 7%; // up left down right
 }
 
 footer {
