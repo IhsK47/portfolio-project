@@ -53,27 +53,41 @@ $desktop: 1080px;
     border: 1.5px solid black;
     background-color: white;
     border-radius: 10%;
-    margin-inline: 10px;
+    margin-right: 10px;
   }
 
   &__projectButtons {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly; //desktop mode, needs a bit more hardcoding tbh
+    justify-content: space-around; //##desktop mode, needs a bit more hardcoding tbh
   }
+}
+
+.cardInfo {       //##not tested yet, potentially requires width
+  display: flex;
+  justify-content: left;
+  width: 80%;
+  //align-self: flex-start;
+  align-items: start;
+}
+
+.projectCard h4 {
+  //lang/framework
+  font-size: 0.95rem;
+  margin-top: 0.3rem;
+  text-align: left;
+  //align-self: flex-start;
 }
 
 .projectCard h3 {
   //proj name
   text-align: left; //if something is in a flex but i want just that sole element to be left rather than centre column?
   font-size: 1.5rem;
+ // align-self: flex-start;
 }
 
-.projectCard h4 {
-  //lang/framework
-  text-align: left; //if something is in a flex but i want just that sole element to be left rather than centre column?
-  font-size: 1rem;
-  //font-weight: 700; browser lowk playing me
+.projectCard p {
+  margin: 3%  7% 3% 0%; // up right down left
 }
 
 main div {
@@ -166,7 +180,7 @@ h2 {
 }
 
 main p {
-  margin: 3%  7% 3% 7%; // up left down right
+  margin: 3%  7% 3% 7%; // up right down left
 }
 
 footer {

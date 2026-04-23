@@ -36,12 +36,25 @@
   border: 1.5px solid black;
   background-color: white;
   border-radius: 10%;
-  margin-inline: 10px;
+  margin-right: 10px;
 }
 .projectsGrid__projectButtons {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-around;
+}
+
+.cardInfo {
+  display: flex;
+  justify-content: left;
+  width: 80%;
+  align-items: start;
+}
+
+.projectCard h4 {
+  font-size: 0.95rem;
+  margin-top: 0.3rem;
+  text-align: left;
 }
 
 .projectCard h3 {
@@ -49,9 +62,8 @@
   font-size: 1.5rem;
 }
 
-.projectCard h4 {
-  text-align: left;
-  font-size: 1rem;
+.projectCard p {
+  margin: 3% 7% 3% 0%;
 }
 
 main div {
