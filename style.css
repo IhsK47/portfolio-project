@@ -95,8 +95,7 @@ nav {
   justify-content: end;
   position: sticky;
   top: 0;
-  background-color: whitesmoke;
-  opacity: 80%;
+  background-color: rgba(211, 211, 211, 0.7);
   height: 30px;
 }
 @media (max-width: 960px) {

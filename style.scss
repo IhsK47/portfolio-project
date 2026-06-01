@@ -124,11 +124,12 @@ nav {
   align-items: center; //vertical
   display: flex;
   justify-content: end; //horizontal
-  position: sticky; //##doesnt work
+  position: sticky;
   top:0;
 
-  background-color: whitesmoke;
-  opacity: 80%;
+  background-color: rgba(211, 211, 211,0.7);
+  //opacity: 70%;
+  //background-color: lightgrey;
   height: 30px;
 
   @include mobile {
