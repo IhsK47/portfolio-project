@@ -2,7 +2,37 @@ https://www.figma.com/design/GcXrhyHfbBVzSsRHPcTmRh/Curriculum---Web---Student-P
 
 https://ihsk47.github.io/portfolio-project/
 
-github isnt realising the changes: border and new 
-- in github pages
 
-any other comments
+Next commit to do:
+- tab title //
+- linking buttons 
+
+1. make sticky nav
+2. make nav link to ids
+3. add email contact
+4. space between skills h2 and p
+
+5. add wayyy more to about me
+- hobbies: travelling, calisthenics, where i grew up, career/dev goals
+
+6. increase font sizes
+7. bold off headers and footers
+
+8. make nav buttons instead of p links
+
+Remi feedback
+
+- make it JS, so project data in array
+- for now, add gitpage links directly
+
+
+
+- I was born and grew up in London, and have lived abroad too which has given me a diverse perspective and adaptability in different environments. My academic journey began with computer science. 
+
+However, during my studies and early career exploration, I discovered a growing interest in technology and coding. Since then, I've explored various coding courses and resources to develop my skills and better understand the tech industry. Through this process, I realised that software development is the career path I genuinely want to pursue. I have been actively working on transitioning from a background in Marketing into tech, dedicating my time to learning programming fundamentals and building projects.
+
+My goal is to continue developing as a well-rounded developer by working on a variety of projects across different programming languages and technologies. I am particularly focused on improving my problem-solving abilities, creativity, and technical confidence. My background in Marketing has also strengthened my communication and analytical skills, which I now bring into my approach to coding. I am excited about the opportunities ahead and motivated to continue learning, growing, and progressing towards a junior software developer role.
+
+- 
+
+see code for any other comments

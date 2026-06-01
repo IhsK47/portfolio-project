@@ -4,21 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ihsan K</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 
 <body>
 
     <nav>
-        <a href=""> <span>Home</span> </a>
-        <a href=""> <span>Projects</span> </a>
-        <a href=""> <span>About</span> </a>
-        <a href=""> <span>Get In Touch</span> </a>
+        <a href="#intro"> <span>Home</span> </a>
+        <a href="#skills"> <span>Skills</span> </a>
+        <a href="#projects"> <span>Projects</span> </a>
+        <a href="#footer"> <span>Get In Touch</span> </a>
     </nav>
 
-    <header>
+    <header id="intro">
         <p class="p--bold"> 👨🏽‍💻 Hello there and welcome! I'm Ihsan Kabir... </p>
         <h1>A Junior Software Developer based in London.</h1>
     </header>
@@ -33,14 +32,14 @@
                 <p>
                     I design and build practical applications that solve real problems,
                     with a focus on clean architecture, scalability,
-                    and long-term maintainability— prioritising strong foundations making future development faster and
-                    more reliable.
+                    and long-term maintainability— prioritising strong foundations making future development 
+                    faster and more reliable.
                     Experienced delivering projects in collaborative environments and hackathons.
                 </p>
             </div>
         </div>
 
-        <div>
+        <div id="skills">
             <h2>Technical Skills</h2>
             <p>This tech stack represents a few of the skills I've worked with throughout my projects. </p>
 
@@ -94,11 +93,11 @@
             </div>
 
         </div>
-        <h2>My Projects</h2>
+        <h2 id="projects">My Projects</h2>
         <div class="projectsGrid">
 
-            <div class="projectCard">
-
+            <div class="projectCard"> <!-- barrie -->
+            
                 <img src="images/gambit ss.png" alt="gambit game" class="projectsGrid__picture">
                 <div class="cardInfo">
                     <h4>PyGame</h4>
@@ -107,13 +106,20 @@
                     <p>During my Computer Science studies, I created a shooter game as part of my coursework.</p>
 
                     <div class="projectsGrid__projectButtons">
-                        <button class="projectsGrid__button">Code &lt;/&gt;</button>
-                        <button class="projectsGrid__button">Preview &lt;/&gt; </button>
+                        
+                        <a href="https://ihsk47.github.io/">
+                            <button class="projectsGrid__button">Preview &lt;/&gt; </button>
+                        </a>
+
+                        <a href="https://github.com/IhsK47/A-level-CS-Project">
+                            <button class="projectsGrid__button">Code &lt;/&gt;</button>
+                        </a>
+
                     </div>
                 </div>
             </div>
 
-            <div class="projectCard">
+            <div class="projectCard"> <!-- portfolio -->
 
                 <img src="images/portfolio.png" alt="portfolio ss" class="projectsGrid__picture"
                     style="border: 0.5px solid #E3F6F5;">
@@ -125,37 +131,79 @@
                         previous/ongoing project and talents.</p>
 
                     <div class="projectsGrid__projectButtons">
-                        <button class="projectsGrid__button">Code &lt;/&gt;</button>
-                        <button class="projectsGrid__button">Preview &lt;/&gt; </button>
+                        
+                        <a href="https://ihsk47.github.io/portfolio-project/">
+                            <button class="projectsGrid__button">Preview &lt;/&gt; </button>
+                        </a>
+
+                        <a href="https://github.com/IhsK47/portfolio-project">
+                            <button class="projectsGrid__button">Code &lt;/&gt;</button>
+                        </a>
+                        
                     </div>
                 </div>
             </div>
 
-            <div class="projectCard">
+            <div class="projectCard">  <!-- trivia -->
 
-                <img src="images/project3.png" alt="xxxxx ss" class="projectsGrid__picture">
+                <img src="images/trivia.png" alt="trivia ss" class="projectsGrid__picture">
                 <div class="cardInfo">
-                    <h4>xxxxx</h4>
-                    <h3>xxxxxxxx</h3>
+                    <h4>JavaScript</h4>
+                    <h3>Trivia Game</h3>
 
-                    <p>short info about the whole proj. coming soon.
-                    short info about the whole proj. comming soon.</p>
+                    <p>This was a project for me to solidify my javaScript.
+                        Players select a difficuluty and are given multiple choice questions with a timer to answer them
+                        all.
+                        It's GUI-based and contains a sheet of data in the JSON format.</p>
 
 
                     <div class="projectsGrid__projectButtons">
-                        <button class="projectsGrid__button">Code &lt;/&gt;</button>
-                        <button class="projectsGrid__button">Preview &lt;/&gt; </button>
+
+                        <a href="https://ihsk47.github.io/Islamic-Trivia/" target="_blank">
+                            <button class="projectsGrid__button">Preview &lt;/&gt; </button>
+                        </a>
+                        
+                        <a href="https://ihsk47.github.io/Islamic-Trivia">
+                            <button class="projectsGrid__button">Code &lt;/&gt;</button>
+                        </a>
+
                     </div>
                 </div>
+
+            </div>
+
+            <div class="projectCard"> <!-- snap -->
+
+                <img src="images/snap.png" alt="xxxxx ss" class="projectsGrid__picture">
+                <div class="cardInfo">
+                    <h4>Java</h4>
+                    <h3>Snap Game</h3>
+
+                    <p>game is snap, players play cli. Stuff about java, java-snap. timer, classes, enums, interfaces</p>
+
+                    <div class="projectsGrid__projectButtons">
+
+                        <a href="https://ihsk47.github.io//">
+                            <button class="projectsGrid__button">Preview &lt;/&gt; </button>
+                        </a>
+
+                        <a href="https://ihsk47.github.io/java-snap">
+                            <button class="projectsGrid__button">Code &lt;/&gt;</button>
+                        </a>
+                        
+                    </div>
+
             </div>
 
 
+
+            </div>
         </div>
 
 
     </main>
 
-    <footer>
+    <footer id="footer">
 
         <div>
             <a href="https://www.github.com/IhsK47" target="_blank">

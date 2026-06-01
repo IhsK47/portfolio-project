@@ -1,9 +1,16 @@
 $mobile: 412px;
-$desktop: 1080px;
+$tablet: 768px;
+$desktop: 960px;
 
 @mixin mobile {
   //like a var
   @media (max-width: $desktop) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: $tablet) {
     @content;
   }
 }
@@ -27,6 +34,10 @@ $desktop: 1080px;
     grid-template-columns: repeat(3, 1fr);
   }
 
+  @include tablet{
+    grid-template-columns: repeat(4,1fr);
+  }
+
   @include desktop {
     grid-template-columns: repeat(9, 1fr);
     width: 1000px; //## uhh not really working  //check now
@@ -34,7 +45,7 @@ $desktop: 1080px;
 }
 
 .projectsGrid {
-  @include desktop {
+  @include tablet {
     display: grid;
     grid-template-columns: repeat(2,1fr);
   }
@@ -72,7 +83,7 @@ $desktop: 1080px;
 }
 
 .projectCard h4 {
-  //lang/framework
+  //lang or framework
   font-size: 0.95rem;
   margin-top: 0.3rem;
   text-align: left;
@@ -81,7 +92,7 @@ $desktop: 1080px;
 
 .projectCard h3 {
   //proj name
-  text-align: left; //if something is in a flex but i want just that sole element to be left rather than centre column?
+  text-align: left;
   font-size: 1.5rem;
  // align-self: flex-start;
 }
@@ -94,7 +105,6 @@ main div {
   display: flex;
   flex-direction: column;
   align-items: center;
-  //border: 1px solid red; //test borders
 }
 
 .p, p, div {
@@ -107,12 +117,19 @@ main div {
 
 html {
   font-family: Inter, sans-serif;
+  scroll-behavior: smooth;
 }
 
 nav {
-  align-items: right; //vertical
+  align-items: center; //vertical
   display: flex;
   justify-content: end; //horizontal
+  position: sticky; //##doesnt work
+  top:0;
+
+  background-color: whitesmoke;
+  opacity: 80%;
+  height: 30px;
 
   @include mobile {
     display: none;
@@ -135,11 +152,10 @@ h1 {
 h2 {
   text-align: center;
   margin: 1rem 0rem 1rem 0rem ;
-  //background-color: aqua; //test borders
 }
 
 .aboutMe {
-  @include desktop {
+  @include tablet {
     flex-direction: row;
   }
 
@@ -149,6 +165,10 @@ h2 {
   width: 200px;
   // margin-top: 1rem;
   border-radius: 10%;
+
+  @include tablet {
+    margin-inline: 3vw;
+  }
 
   @include desktop {
     margin-inline: 5vw;
@@ -174,13 +194,18 @@ h2 {
 
 .footer-icons {
   //change to footer
-  border-radius: 50%; //can make it png and round via bg coloring
+  border-radius: 50%;
   overflow: hidden;
   width: 40px;
 }
 
 main p {
   margin: 3%  7% 3% 7%; // up right down left
+}
+
+
+#skills p {
+   margin: 1%  0% 1% 0%; // up right down left
 }
 
 footer {
