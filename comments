@@ -6,7 +6,7 @@ https://ihsk47.github.io/portfolio-project/
 Next commit to do:
 - tab header image
 
-3. add email contact
+3. add cv file
 
 5. add wayyy more to about me
 - hobbies: travelling, calisthenics, where i grew up, career/dev goals
@@ -18,7 +18,7 @@ Next commit to do:
 
 Remi feedback
 
-- make it JS, so project data in array
+- make it JS, so project and techStack data in array
 - for now, add gitpage links directly
 
 
