@@ -1,7 +1,5 @@
 https://www.figma.com/design/GcXrhyHfbBVzSsRHPcTmRh/Curriculum---Web---Student-Portfolio-Template?node-id=3552-2&p=f&t=fI3ohnBpsjvVlSKC-0
 
-https://ihsk47.github.io/portfolio-project/
-
 
 Next commit to do:
 - tab header image
@@ -20,6 +18,14 @@ Remi feedback
 
 - make it JS, so project and techStack data in array
 - for now, add gitpage links directly
+
+
+projects = {
+    name: "how many pillars of Islam are there?",
+    tech: "5",
+    choices: "info",
+}
+
 
 
 
