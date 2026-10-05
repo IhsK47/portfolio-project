@@ -42,7 +42,18 @@ let projects = [
     codeLink: "https://ihsk47.github.io/java-snap",
     img: "images/snap.png",
     altText: "xxxxx ss",
-    view: "In Progress",
+    view: "n/a",
+  },
+
+  {
+    name: "Hogwarts Registry",
+    tech: "Full Stack: Group Project",
+    info: "xxxxxxxxxx",
+    viewLink: "https://github.com/ihsK47/",
+    codeLink: "https://github.com/DarcyIsSoCOOLANDAWESOME/FrontEnd-HogwartsReg",
+    img: "images/hw ss.png",
+    altText: "hogwarts",
+    view: "n/a",
   },
   {
     name: "shareCart",
@@ -54,6 +65,7 @@ let projects = [
     altText: "cartShare screenshot",
     view: "in progress",
   },
+
 ];
 
 projects.forEach((proj) => {

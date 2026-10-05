@@ -2,10 +2,6 @@ https://www.figma.com/design/GcXrhyHfbBVzSsRHPcTmRh/Curriculum---Web---Student-P
 
 https://ihsk47.github.io/portfolio-project/
 
-<!-- portfolio -->
-
-                <img src="images/portfolio.png" alt="portfolio ss" class="projectsGrid__picture"
-                    style="border: 0.5px solid #E3F6F5;">
 
 Next commit to do:
 - tab header image
@@ -19,11 +15,6 @@ Next commit to do:
 7. bold off headers and footers
 
 8. make nav buttons instead of p links
-
-Remi feedback
-
-- make it JS, so project and techStack data in array
-- for now, add gitpage links directly
 
 
 projects = {
@@ -40,12 +31,14 @@ projects = {
 --- name and id are equal, so that doc select can do unique css additions
 
 
-- I was born and grew up in London, and have lived abroad too which has given me a diverse perspective and adaptability in different environments. My academic journey began with computer science. 
+I design and build practical applications that solve real problems, with a focus on clean architecture, scalability, and long-term maintainability— prioritising strong foundations making future development faster and more reliable. Experienced delivering projects in collaborative environments and hackathons.
 
-However, during my studies and early career exploration, I discovered a growing interest in technology and coding. Since then, I've explored various coding courses and resources to develop my skills and better understand the tech industry. Through this process, I realised that software development is the career path I genuinely want to pursue. I have been actively working on transitioning from a background in Marketing into tech, dedicating my time to learning programming fundamentals and building projects.
+However, during my studies and early career exploration, when I was 8, I found out there's a massive slide at Google HQ, hence I discovered a growing interest in technology and coding. Since then, I've continously picked computer science and programming throughout my education and extended that to the career path I've centred my professional life around. Overtime, I became less interested in the slide and more interested in how versatile and central technology is to our lives in this era, and fell in love with software development. Now, I just want to build things that actually help people, I don't believe in thinking about problems unless youre immedietely thinking about solving them. Maybe at some point too, I'll progress into AI engineering or quantum computing.
 
-My goal is to continue developing as a well-rounded developer by working on a variety of projects across different programming languages and technologies. I am particularly focused on improving my problem-solving abilities, creativity, and technical confidence. My background in Marketing has also strengthened my communication and analytical skills, which I now bring into my approach to coding. I am excited about the opportunities ahead and motivated to continue learning, growing, and progressing towards a junior software developer role.
+My goal is to continue developing as a well-rounded developer by working on a variety of projects across different languages and picking up new technologies. I am particularly focused on improving my programming practices and producing high-quality code in industry. Currently, the next step is progressing to a role as a junior software developer.
 
-- 
+In case you got bored reading all that, I was also born and raised in London, and have lived abroad at some point which has given me a diverse perspective and adaptability in different environments. Outside of travelling, I'm an introvert who's a hardcore MCU fan and absolutely loves an adventure, thanks for coming to my tedTalk.
 
-see code for any other comments
+
+
+/see code for any other comments
