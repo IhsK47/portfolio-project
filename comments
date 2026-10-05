@@ -2,6 +2,10 @@ https://www.figma.com/design/GcXrhyHfbBVzSsRHPcTmRh/Curriculum---Web---Student-P
 
 https://ihsk47.github.io/portfolio-project/
 
+<!-- portfolio -->
+
+                <img src="images/portfolio.png" alt="portfolio ss" class="projectsGrid__picture"
+                    style="border: 0.5px solid #E3F6F5;">
 
 Next commit to do:
 - tab header image
