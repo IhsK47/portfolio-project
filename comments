@@ -26,6 +26,19 @@ Remi feedback
 - for now, add gitpage links directly
 
 
+projects = {
+    name: "shareCart",
+    tech: "5",
+    info: "shared shopping list",
+    view: "link",
+    code: "link",
+    img: "images/sc ss"
+    alt text: "cartShare ss"
+    game: "no"
+}
+
+--- name and id are equal, so that doc select can do unique css additions
+
 
 - I was born and grew up in London, and have lived abroad too which has given me a diverse perspective and adaptability in different environments. My academic journey began with computer science. 
 
