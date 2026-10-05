@@ -1,32 +1,27 @@
-// import data
+// import data?
 
 const projectsGrid = document.querySelector(".projectsGrid");
 const skillsGrid = document.querySelector(".skillsGrid");
-
-const exB = document.querySelector(".projectsGrid__button")
-console.log(exB);
-
 
 let projects = [
   {
     name: "shareCart",
     tech: "Full stack",
     info: "shared shopping list",
-    viewLink: "link",
-    code: "link",
-    img: "images/sc ss",
+    viewLink: "https://www.sharecart.com",
+    codeLink: "link",
+    img: "images/trivia.png",
     altText: "cartShare ss",
     view: "in progress",
   },
 	  {
     name: "shareCart",
-    tech: "Full stack",
+    tech: "Stack.io",
     info: "shared shopping list",
-    view: "link",
+    viewLink: "https://www.sharecart.com",
     code: "link",
     img: "images/sc ss",
-    altText: "cartShare ss",
-    view: "in progress",
+    altText: "cartShare ss"
   },
 ];
 
@@ -36,7 +31,15 @@ projects.forEach((proj) => {
 
   projectsGrid.append(card);
 
-	//img
+	//<img = class="projectsGrid__picture">
+                
+
+	let img = document.createElement("img")
+	img.src = proj.img
+	img.alt = proj.altText
+	img.classList.add("projectsGrid__picture")
+	
+
 
   let cardInfo = document.createElement("div");
   card.classList.add("cardInfo");
@@ -48,28 +51,36 @@ projects.forEach((proj) => {
   para.innerText = proj.info;
   
 
-	let buttons = document.createElement("div");
+	let buttons = document.createElement("form");
 	buttons.classList.add("projectsGrid__projectButtons");
 
-	let view = document.createElement("a")
-	
-	console.log(view);
-
-	view.href=proj.viewLink
-
 	let viewB=document.createElement("button")
-	console.log(viewB);
+	viewB.innerText= (proj.view || "View") + " </>"
+	viewB.onclick= () => {window.open(proj.viewLink)}
+	viewB.type= "button"
+	viewB.formTarget= "_blank"
+	viewB.classList.add("projectsGrid__button")
+
+
+	let codeB=document.createElement("button")
+	codeB.innerText= "Code </>"
+	codeB.onclick= () => {window.open(proj.codeLink)}
+	codeB.type= "button"
+	codeB.formTarget= "_blank"
+	codeB.classList.add("projectsGrid__button")
 	
 
-	view.innerText= proj.view + " </>"
+	
+	buttons.append(viewB, codeB)
 
+    // <form>
+    //   <button type="reset" onclick="location.href='https://sentry.io/answers/'">
+    //     Answers by Sentry
+    //   </button>
+    // </form>
 
-	//        <a href="https://ihsk47.github.io/">
-  //      <button class="projectsGrid__button">Preview &lt;/&gt; </button>
-  //      </a>
-
-	cardInfo.append(tech, name, para, view);
-	card.append(cardInfo) //img, info
+	cardInfo.append(tech, name, para, buttons);
+	card.append(img, cardInfo) //img, info
 	console.log("hola");
 
 });
@@ -84,9 +95,9 @@ create project card under projectsGrid
         name h3
         info p 
 
-        div buttons
-            view   <a href> target blank button </a>
-            code   <a href> target blank button </a>
+        form buttons
+            view   <button> target blank
+            code   <button> target blank
 
 
 <div class="projectCard">
