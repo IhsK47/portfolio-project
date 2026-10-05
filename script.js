@@ -3,33 +3,75 @@
 const projectsGrid = document.querySelector(".projectsGrid");
 const skillsGrid = document.querySelector(".skillsGrid");
 
-let projects = [ {
-  name: "shareCart",
-  tech: "full stack",
-  info: "shared shopping list",
-  view: "link",
-  code: "link",
-  img: "images/sc ss",
-  altText: "cartShare ss",
-  game: "no",
-} ];
+const exB = document.querySelector(".projectsGrid__button")
+console.log(exB);
+
+
+let projects = [
+  {
+    name: "shareCart",
+    tech: "Full stack",
+    info: "shared shopping list",
+    viewLink: "link",
+    code: "link",
+    img: "images/sc ss",
+    altText: "cartShare ss",
+    view: "in progress",
+  },
+	  {
+    name: "shareCart",
+    tech: "Full stack",
+    info: "shared shopping list",
+    view: "link",
+    code: "link",
+    img: "images/sc ss",
+    altText: "cartShare ss",
+    view: "in progress",
+  },
+];
 
 projects.forEach((proj) => {
-  let card1 = document.createElement("div");
-  card1.classList.add("projectCard");
+  let card = document.createElement("div");
+  card.classList.add("projectCard");
 
-  projectsGrid.append(card1);
+  projectsGrid.append(card);
 
-  console.log("hola workd");
+	//img
 
-
-  const name = document.createElement("h3");
+  let cardInfo = document.createElement("div");
+  card.classList.add("cardInfo");
+  let name = document.createElement("h3");
+  let tech = document.createElement("h4");
+  let para = document.createElement("p");
   name.innerText = proj.name;
-
-  const tech = document.createElement("h4");
   tech.innerText = proj.tech;
+  para.innerText = proj.info;
+  
 
-  card1.append(tech, name);
+	let buttons = document.createElement("div");
+	buttons.classList.add("projectsGrid__projectButtons");
+
+	let view = document.createElement("a")
+	
+	console.log(view);
+
+	view.href=proj.viewLink
+
+	let viewB=document.createElement("button")
+	console.log(viewB);
+	
+
+	view.innerText= proj.view + " </>"
+
+
+	//        <a href="https://ihsk47.github.io/">
+  //      <button class="projectsGrid__button">Preview &lt;/&gt; </button>
+  //      </a>
+
+	cardInfo.append(tech, name, para, view);
+	card.append(cardInfo) //img, info
+	console.log("hola");
+
 });
 
 /*
@@ -37,7 +79,7 @@ loop thru table
    
 create project card under projectsGrid
     img tag > 
-    div info
+    div card info
         stack h4
         name h3
         info p 
@@ -47,30 +89,12 @@ create project card under projectsGrid
             code   <a href> target blank button </a>
 
 
-
-/*
-<div class="skillsGrid">
-    <div>
-        <img src="images/html icon.png" alt="html5" class="icon">
-                HTML
-    </div>
-</>
-
-projectsGrid
-    projectCard
-        img
-        info    = h4,3 + p
-        buttons = demo + code
-
-
 <div class="projectCard">
             
     <img src="images/gambit ss.png" alt="gambit game" class="projectsGrid__picture">
     
     <div class="cardInfo">
-            <h4>PyGame</h4>
-            <h3>Barries Gambit</h3>
-            <p>..ppppppppp..</p>
+
 
     <div class="projectsGrid__projectButtons">
                         
@@ -86,6 +110,14 @@ projectsGrid
                 </div>
             </div>
 
+
+/*
+<div class="skillsGrid">
+    <div>
+        <img src="images/html icon.png" alt="html5" class="icon">
+                HTML
+    </div>
+</>
 
 
 */
