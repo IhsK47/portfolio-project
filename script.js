@@ -22,6 +22,7 @@ let projects = [
     codeLink: "https://github.com/IhsK47/portfolio-project",
     img: "images/portfolio.png",
     altText: "portfolio ss",
+    imgId: "portfolioImg"
   },
   {
     name: "Trivia Game",
@@ -64,6 +65,8 @@ projects.forEach((proj) => {
   img.alt = proj.altText;
   img.classList.add("projectsGrid__picture");
 
+  if (proj.imgId) img.id = proj.imgId //only for portfolio pic tbh
+
   let cardInfo = document.createElement("div");
 
   let name = document.createElement("h3");
@@ -101,6 +104,9 @@ projects.forEach((proj) => {
   card.append(img, cardInfo); //img, info
   projectsGrid.append(card);
 });
+
+
+
 
 /*
 loop thru table
