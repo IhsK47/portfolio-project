@@ -104,7 +104,7 @@ nav {
   background-color: rgba(211, 211, 211, 0.7);
   height: 30px;
 }
-@media (max-width: 960px) {
+@media (max-width: 160px) {
   nav {
     display: none;
   }

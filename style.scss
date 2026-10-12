@@ -139,7 +139,7 @@ nav {
   //background-color: lightgrey;
   height: 30px;
 
-  @include mobile {
+  @media (max-width: 160px) {
     display: none;
   }
 }

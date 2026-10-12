@@ -37,7 +37,7 @@ let projects = [
   {
     name: "Snap Game",
     tech: "Java",
-    info: "My first java project; a game of snap. Players make their input using the CLI. xxx Stuff about java,. timer, classes, enums, interfaces",
+    info: "My first Java project is a CLI-based Snap game building interactive game logic from the ground up. Players take turns drawing cards; when cards match, they have to enter “Snap” within a 2s timer. The game uses Java classes, enums, collections, and comparator interfaces to model the deck, suits, players, and turn-based gameplay. This project solidified my understanding of object-oriented programming, Java syntax, user input handling, and game flow design.",
     viewLink: "https://ihsk47.github.io//",
     codeLink: "https://ihsk47.github.io/java-snap",
     img: "images/snap.png",
@@ -73,11 +73,11 @@ projects.forEach((proj) => {
   card.classList.add("projectCard");
 
   let img = document.createElement("img");
-  img.src = proj.img || "images/pending.jpeg";
+  img.src = proj.img || "images/pending.jpg";
   img.alt = proj.altText;
   img.classList.add("projectsGrid__picture");
 
-  if (proj.imgId) img.id = proj.imgId //only for portfolio pic tbh
+  img.id = proj.imgId //only for portfolio pic tbh
 
   let cardInfo = document.createElement("div");
 
