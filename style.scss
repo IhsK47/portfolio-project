@@ -169,6 +169,18 @@ h2 {
 
 }
 
+.aboutMe__text {
+  flex: 1;
+  min-width: 0;
+  align-items: stretch;
+  gap: 0.5em;
+  margin-top: 4%;
+
+  @include tablet {
+    margin-top: 0;
+  }
+}
+
 #ihsan-pic {
   width: 200px;
   // margin-top: 1rem;
@@ -185,7 +197,7 @@ h2 {
 }
 
 .aboutMe p {
-   margin: 4% 3% 4% 3%; 
+  margin: 0 3%;
 }
 
 .icon {
