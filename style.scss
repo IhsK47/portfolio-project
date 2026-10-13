@@ -138,8 +138,9 @@ nav {
   //opacity: 70%;
   //background-color: lightgrey;
   height: 30px;
+  width: 100%;
 
-  @media (max-width: 160px) {
+  @media (max-width: 200px) {
     display: none;
   }
 }
@@ -183,7 +184,6 @@ h2 {
 
 #ihsan-pic {
   width: 200px;
-  // margin-top: 1rem;
   border-radius: 10%;
 
   @include tablet {
@@ -191,7 +191,7 @@ h2 {
   }
 
   @include desktop {
-    margin-inline: 5vw;
+    margin-inline: 5vw 1vw;
   }
 
 }
